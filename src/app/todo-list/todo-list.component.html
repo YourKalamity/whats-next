@@ -1,0 +1,8 @@
+<div class="todo-list" cdkDropList (cdkDropListDropped)="drop($event)">
+    <div class="todo-list-item" *ngFor="let todo of todos$ | async" cdkDrag>
+        <span class="todo-list-handle">::</span> 
+        <span class="todo-list-text">{{ todo }}</span>
+        <button (click)="remove(todo)
+        " class="todo-list-remove">Remove</button>
+    </div>
+</div>

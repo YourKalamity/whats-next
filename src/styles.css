@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  --dot-bg: black;
+  --dot-color: white;
+  --dot-size: 0.5px;
+  --dot-space: 40px;
+	background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Header is centred  and moved down a quarter of the page */
+header {
+  text-align: center;
+  margin-top: 25vh;
+  font-size:xx-large;
+  /* Breathing effect with glow */
+  animation: breathe 2s infinite;
+  text-shadow: 0 0 5px wheat;
+}
+
+
+

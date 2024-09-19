@@ -1,0 +1,57 @@
+.todo-input {
+    /* Center the input field */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin: auto;
+}
+
+/* Emoji select */
+.todo-input.emoji {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin: auto;
+    height:30px;
+    font-size: 16px;
+}
+
+.todo-input input {
+    width: 30%;
+    min-width: 300px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #ccc;
+    background-color: black;
+    color: white;
+}
+
+.todo-input span {
+    color: white;
+    font-size: 30px;
+    /* Glow effect */
+    text-shadow: 0 0 10px white;
+}
+
+.todo-input button {
+    height: 50px;
+    font-size: 25px;
+    padding: 5px;
+    border: 1px white solid;
+    border-top-right-radius: 5px;  
+    border-bottom-right-radius: 5px;
+    background-color: black;
+    color: white;
+    vertical-align: center;
+    margin-top: auto;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+  

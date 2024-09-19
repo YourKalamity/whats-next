@@ -1,0 +1,89 @@
+/* Container for the todo list */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Each todo list item */
+.todo-list-item {
+  position: relative; /* Add relative positioning */
+  display: flex;
+  align-items: center;
+  width: 30%;
+  min-width: 300px;
+  padding: 10px 50px 10px 10px; /* Adjust padding to accommodate the button */
+  margin-bottom: 10px;
+  background-color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+
+/* Drag handle */
+.todo-list-handle {
+  cursor: move;
+  margin-right: 30px;
+  color: white;
+  font-size: 24px;
+}
+
+/* Todo text */
+.todo-list-item .todo-text {
+  flex-grow: 1;
+  /* Glow effect */
+  text-shadow: 0 0 5px white;
+}
+
+/* Remove button */
+.todo-list-item button {
+  position: absolute; /* Position the button absolutely */
+  right: 10px; /* Stick to the right edge */
+  top: 50%; /* Vertically center the button */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Hover effect on Remove button */
+.todo-list-item button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Styles for the drag preview */
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+}
+
+/* Change style when dragging */
+.cdk-drag-placeholder {
+  background-color: #444; /* Darker background */
+  border: 1px dashed #888; /* Dashed border */
+  height: 40px; /* Match the height of the original item */
+}
+
+/* Prevent text selection during drag */
+[cdkDrag] {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: none;
+}

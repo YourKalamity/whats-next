@@ -1,0 +1,12 @@
+<!--This is an input for a to do list item-->
+<!--On the left is an emoji selector to label it-->
+<!-- A short text field to label-->
+<!-- A button to add it to the list-->
+
+<div class="todo-input">
+
+    <input type="text" placeholder="What needs to be done?" [(ngModel)]="todoTitle">
+    <button (click)="addTodo()">
+        <span>+</span>
+    </button>
+</div>
